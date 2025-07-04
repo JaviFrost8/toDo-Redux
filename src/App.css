@@ -1,0 +1,122 @@
+:root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(49, 49, 49)
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btns-container{
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.btns-container button{
+  font-size: 20px;
+  border: none;
+  background-color: rgb(0, 131, 253);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.btns-container button:hover{
+  background-color:rgb(2, 96, 184);
+}
+
+.btns-container button:active{
+  transform: scale(.98);
+}
+
+input[type='text']{
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+input[type='text']:focus{
+  outline: none;
+}
+
+.add{
+  font-size: 20px;
+  border: none;
+  background-color: rgb(0, 131, 253);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add:active{
+  transform: scale(.98)
+}
+
+h2{
+  color: lightgray;
+  font-size: 35px;
+}
+
+.empty{
+  color: lightgrey;
+  font-size: 20px;
+}
+
+.todos-container{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.todo{
+  background-color:rgb(0, 131, 253);
+  width: 250px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5px 5px 5px;
+}
+
+.top-todo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color:rgb(83, 172, 255);
+  padding: 5px;
+}
+
+.top-todo button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 16px;
+  transition: all .1s;
+}
+
+.top-todo button:hover{
+  transform: scale(1.1);
+}
+
+.text{
+  font-size: 20px;
+  padding: 20px;
+}

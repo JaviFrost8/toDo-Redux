@@ -25,7 +25,7 @@ function App() {
     <div className='container'>
 
       <div className='btns-container'>
-        <button  onClick={() => dispatch(setFilter('all'))}>Todas</button>
+        <button onClick={() => dispatch(setFilter('all'))}>Todas</button>
         <button onClick={() => dispatch(setFilter('pending'))}>Pendientes</button>
         <button onClick={() => dispatch(setFilter('completed'))}>Completadas</button>
       </div>
@@ -65,7 +65,7 @@ function App() {
             <AnimatePresence>
               {
                 todosFiltered.map((item, index) => (
-                  <motion.div style={{ backgroundColor: item.completed ? 'gray' : '' }} 
+                  <motion.div style={{ backgroundColor: item.completed ? 'gray' : ''}} 
                     key={index}
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}

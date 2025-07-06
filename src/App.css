@@ -85,18 +85,24 @@ h2{
 }
 
 .todo{
-  background-color:rgb(0, 131, 253);
-  width: 250px;
-  color: white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color:rgb(0, 131, 253);
+  min-height: 250px;
+  width: 250px;
+  color: white;
   padding: 0 5px 5px 5px;
 }
 
 .top-todo{
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
   display: flex;
   justify-content: flex-end;
   background-color:rgb(83, 172, 255);
